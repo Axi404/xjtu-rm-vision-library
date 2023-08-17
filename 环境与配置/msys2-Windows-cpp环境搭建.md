@@ -32,7 +32,7 @@ tags: msys2, C++, Windows, CMake, Clangd, VSCode, completed
 
 安装过程就不细说了，选择安装文件夹，建议不要选在 C 盘，之后是正常的安装流程。勾选一个运行 msys 2，会看到这样一个界面（我目前用的是 win10）：
 
-![[Pasted image 20230815212713.png]]
+![[msys2-UCRT64.png]]
 
 看到这个界面，说明安装没有问题。
 
@@ -42,15 +42,15 @@ tags: msys2, C++, Windows, CMake, Clangd, VSCode, completed
 
 win 10/11：设置->系统->关于->高级系统设置->环境变量
 
-![[Pasted image 20230815213709.png]]
+![[环境变量.png]]
 
 找到系统变量中的 Path，打开：
 
-![[Pasted image 20230815213737.png]]
+![[编辑环境变量.png]]
 
 点击新建，把刚才安装 msys 2 的路径粘进去。我们只需要添加 ucrt 64 的环境，如图所示：
 
-![[Pasted image 20230815214045.png]]
+![[新建环境变量.png]]
 
 确定之后，环境变量就 ok 了。
 
@@ -68,11 +68,11 @@ msys 2 本质上是编译工具链的管理工具，我们还需要使用它来�
 
 终端长这样：
 
-![[Pasted image 20230815215801.png]]
+![[WindowsPowerShell.png]]
 
 分别输入 gcc 以及 clangd 后得到如图输出，说明安装成功，并且环境变量生效：
 
-![[Pasted image 20230815215859.png]]
+![[验证gcc与clangd.png]]
 
 ## cmake
 
@@ -81,11 +81,11 @@ cmake 是一个用于组织 cpp 项目的工具，能够实现多个 cpp 文件�
 cmake 下载地址：[Download | CMake](https://cmake.org/download/)，我们用 64 位的 windows 安装包。
 安装过程也没啥好说的，记着勾上环境变量：
 
-![[Pasted image 20230815220551.png]]
+![[安装cmake.png]]
 
 再开个终端，试一下有没有：
 
-![[Pasted image 20230815220658.png]]
+![[验证cmake.png]]
 
 这个样子就 ok 了。
 
@@ -101,30 +101,30 @@ cmake 下载地址：[Download | CMake](https://cmake.org/download/)，我们用
 
 点击左边的四个框框图标，开始装插件。在上面的搜索栏搜索就行，目前需要的是这些插件，在左边那一列中显示。其中 synthwave 是我比较喜欢的一个黑色主题，大家也可找找看自己喜欢的主题。此外，. NET 插件会自动下载一些东西，这个有可能因为网速问题下载失败，不过问题不大，目前不影响使用。
 
-![[Pasted image 20230815222200.png]]
+![[VSCode应用拓展.png]]
 
 然后打开一个空文件夹后进入，勾选信任此作者，到了这个界面：
 
-![[Pasted image 20230815222435.png]]
+![[VSCode工作区.png]]
 
 这里就要介绍一下 vscode cmake 插件的用法了。
 
 ctrl+shift+p, 输入 cmake，选中 cmake: quick start
 
-![[Pasted image 20230815222530.png]]
+![[VSCode-CMake快速入门.png]]
 
 之后的步骤我就不放图片了，选择 gcc 13 的编译器，输入 cmake_test 作为项目名称，创建 c++项目，创建 executable（可执行文件），最后会生成一些文件：
 
-![[Pasted image 20230815222755.png]]
+![[生成CMakeLists.png]]
 
 其中 cmakelists 就是用于管理 cmake 项目的工具，而 main. cpp 就是默认生成的实例代码。关于 cmake 的知识我们之后再说，现在配环境，重点是能编译过。
 
 直接点击下面的生成，会看到这样的结果：
 
-![[Pasted image 20230815223346.png]]
+![[CMake编译成功.png]]
 
 三角符号就是运行，点击之后可以看到 hello 输出：
 
-![[Pasted image 20230815223426.png]]
+![[CMake编译运行.png]]
 
 至此，cpp 开发与运行环境基本搞定，大家可以在此基础上学习 cmake 脚本的编写以及 c++的语法知识了。

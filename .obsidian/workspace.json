@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d18f6c2582a8e854",
+        "id": "2b11350503b5f940",
         "type": "tabs",
         "children": [
           {
-            "id": "2155b92831e8f549",
+            "id": "2a02a05b8ed5b799",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "相关信息/约定式提交.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "相关信息/约定式提交.md",
+                "file": "images/环境搭建/CMake编译成功.png",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "相关信息/约定式提交.md",
+                "file": "images/环境搭建/CMake编译成功.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "相关信息/约定式提交.md"
+                "file": "images/环境搭建/CMake编译成功.png"
               }
             }
           }
@@ -147,20 +143,31 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "2155b92831e8f549",
+  "active": "4f5be6631f674214",
   "lastOpenFiles": [
+    "images/环境搭建/生成CMakeLists.png",
+    "images/环境搭建/VSCode-CMake快速入门.png",
+    "images/环境搭建/VSCode工作区.png",
+    "images/环境搭建/VSCode应用拓展.png",
+    "images/环境搭建/验证cmake.png",
+    "images/环境搭建/安装cmake.png",
+    "images/环境搭建/验证gcc与clangd.png",
+    "images/环境搭建/WindowsPowerShell.png",
+    "images/环境搭建/CMake编译运行.png",
+    "images/环境搭建/msys2-UCRT64.png",
+    "images/环境搭建/新建环境变量.png",
+    "工具使用/Git教程.md",
+    "环境与配置/msys2-Windows-cpp环境搭建.md",
+    "文档编写/Markdown教程.md",
+    "文档编写/Obsidian编写指南.md",
     "Home.md",
     "相关信息/约定式提交.md",
     "相关信息/文本书写规范.md",
     "相关信息/贡献者须知.md",
     "相关信息/知识库编写规范.md",
     "readme.md",
-    "文档编写/Obsidian编写指南.md",
-    "环境与配置/msys2-Windows-cpp环境搭建.md",
-    "工具使用/Git教程.md",
     "文档编写/LaTeX/LaTeX教程.md",
     "文档编写/LaTeX/LaTeX数学公式.md",
-    "文档编写/Markdown教程.md",
     "相关信息/Obsidian阅读指南.md",
     "相关信息/关于本知识库.md",
     "数学知识",
@@ -174,18 +181,8 @@
     "未命名.md",
     "环境与配置",
     "回收站/回收站说明.md",
-    "images/环境搭建/Pasted image 20230815223426.png",
     "images/环境搭建",
     "images/未命名.md",
-    "images/环境搭建/Pasted image 20230815223346.png",
-    "images/环境搭建/Pasted image 20230815222755.png",
-    "images/环境搭建/Pasted image 20230815222530.png",
-    "images/环境搭建/Pasted image 20230815222435.png",
-    "images/环境搭建/Pasted image 20230815222200.png",
-    "images/环境搭建/Pasted image 20230815220658.png",
-    "images/环境搭建/Pasted image 20230815220551.png",
-    "images/环境搭建/Pasted image 20230815215859.png",
-    "images/环境搭建/Pasted image 20230815215801.png",
     "培训0/附件",
     "计算机知识/Linux教程/Linux教程知识目录.md",
     "计算机知识/Linux教程/Linux命令行教程/Linux命令行入门教程.md",
