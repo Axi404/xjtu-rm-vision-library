@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2b11350503b5f940",
+        "id": "70ae99230cb953de",
         "type": "tabs",
         "children": [
           {
-            "id": "2a02a05b8ed5b799",
+            "id": "62f15b95db2fa253",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "编程技巧/语言学习/C++/C++快速入门.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "images/环境搭建/CMake编译成功.png",
+                "file": "编程技巧/语言学习/C++/C++快速入门.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "images/环境搭建/CMake编译成功.png",
+                "file": "编程技巧/语言学习/C++/C++快速入门.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "images/环境搭建/CMake编译成功.png"
+                "file": "编程技巧/语言学习/C++/C++快速入门.md"
               }
             }
           }
@@ -143,8 +147,19 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "4f5be6631f674214",
+  "active": "62f15b95db2fa253",
   "lastOpenFiles": [
+    "工具使用/Git教程.md",
+    "Home.md",
+    "编程技巧/语言学习/C++/C++快速入门.md",
+    "文档编写/Obsidian编写指南.md",
+    "编程技巧/语言学习/C++",
+    "编程技巧/语言学习/未命名.md",
+    "编程技巧/语言学习",
+    "编程技巧/未命名.md",
+    "文档编写/Markdown教程.md",
+    "环境与配置/msys2-Windows-cpp环境搭建.md",
+    "msys2-Windows-cpp环境搭建.pdf",
     "images/环境搭建/生成CMakeLists.png",
     "images/环境搭建/VSCode-CMake快速入门.png",
     "images/环境搭建/VSCode工作区.png",
@@ -155,12 +170,6 @@
     "images/环境搭建/WindowsPowerShell.png",
     "images/环境搭建/CMake编译运行.png",
     "images/环境搭建/msys2-UCRT64.png",
-    "images/环境搭建/新建环境变量.png",
-    "工具使用/Git教程.md",
-    "环境与配置/msys2-Windows-cpp环境搭建.md",
-    "文档编写/Markdown教程.md",
-    "文档编写/Obsidian编写指南.md",
-    "Home.md",
     "相关信息/约定式提交.md",
     "相关信息/文本书写规范.md",
     "相关信息/贡献者须知.md",
@@ -179,17 +188,12 @@
     "文档编写",
     "相关信息",
     "未命名.md",
-    "环境与配置",
     "回收站/回收站说明.md",
-    "images/环境搭建",
     "images/未命名.md",
-    "培训0/附件",
     "计算机知识/Linux教程/Linux教程知识目录.md",
     "计算机知识/Linux教程/Linux命令行教程/Linux命令行入门教程.md",
     "计算机知识/Linux教程/Linux安装教程/Ubuntu安装教程.md",
     "回收站/2023年/知识库编写规范（Version 0.01）.md",
-    "通识知识/中国近现代史纲要/中国近现代史纲要复习大纲.md",
-    "通识知识/中国近现代史纲要/中国近现代史纲要思考题.md",
-    "通识知识/通识知识知识目录.md"
+    "通识知识/中国近现代史纲要/中国近现代史纲要复习大纲.md"
   ]
 }
