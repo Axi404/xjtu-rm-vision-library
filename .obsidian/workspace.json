@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "410c7b7001023b8a",
+        "id": "bf52a4364b67a480",
         "type": "tabs",
         "children": [
           {
-            "id": "3ee74fab84189d66",
+            "id": "c6e5ab70579c666e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,29 +147,32 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "3ee74fab84189d66",
+  "active": "c6e5ab70579c666e",
   "lastOpenFiles": [
-    "编程技巧/语言学习/C++/C++快速入门.md",
+    "环境与配置/Ubuntu安装教程.md",
     "Home.md",
+    "images/Linux安装教程/选择Ubuntu安装.jpg",
+    "images/Linux安装教程/输入压缩量.png",
+    "images/Linux安装教程/软件与更新.png",
+    "images/Linux安装教程/检查磁盘内容.jpg",
+    "images/Linux安装教程/拓展和主题.png",
+    "images/Linux安装教程/打开U盘.jpg",
+    "images/Linux安装教程/安装插件.png",
+    "images/Linux安装教程/压缩卷.png",
+    "images/Linux安装教程/其他位置.png",
+    "images/Linux安装教程/任务栏位置设置.png",
+    "images/Linux安装教程",
+    "环境与配置/msys2-Windows-cpp环境搭建.md",
+    "编程技巧/语言学习/C++/C++快速入门.md",
     "工具使用/Git教程.md",
+    "工具使用/配置舒适的Windows系统.md",
     "文档编写/Obsidian编写指南.md",
     "编程技巧/语言学习/C++",
     "编程技巧/语言学习/未命名.md",
     "编程技巧/语言学习",
     "编程技巧/未命名.md",
     "文档编写/Markdown教程.md",
-    "环境与配置/msys2-Windows-cpp环境搭建.md",
     "msys2-Windows-cpp环境搭建.pdf",
-    "images/环境搭建/生成CMakeLists.png",
-    "images/环境搭建/VSCode-CMake快速入门.png",
-    "images/环境搭建/VSCode工作区.png",
-    "images/环境搭建/VSCode应用拓展.png",
-    "images/环境搭建/验证cmake.png",
-    "images/环境搭建/安装cmake.png",
-    "images/环境搭建/验证gcc与clangd.png",
-    "images/环境搭建/WindowsPowerShell.png",
-    "images/环境搭建/CMake编译运行.png",
-    "images/环境搭建/msys2-UCRT64.png",
     "相关信息/约定式提交.md",
     "相关信息/文本书写规范.md",
     "相关信息/贡献者须知.md",
@@ -186,14 +189,10 @@
     "计算机视觉",
     "工具使用",
     "文档编写",
-    "相关信息",
     "未命名.md",
     "回收站/回收站说明.md",
     "images/未命名.md",
     "计算机知识/Linux教程/Linux教程知识目录.md",
-    "计算机知识/Linux教程/Linux命令行教程/Linux命令行入门教程.md",
-    "计算机知识/Linux教程/Linux安装教程/Ubuntu安装教程.md",
-    "回收站/2023年/知识库编写规范（Version 0.01）.md",
-    "通识知识/中国近现代史纲要/中国近现代史纲要复习大纲.md"
+    "计算机知识/Linux教程/Linux命令行教程/Linux命令行入门教程.md"
   ]
 }

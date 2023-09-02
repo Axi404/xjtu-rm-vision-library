@@ -99,8 +99,6 @@ git push -u origin 主分支名
 git clone 远程仓库URL
 ```
 
-# GitHub 基础
-
 ## 发起 Pull Request
 
 1. 在 GitHub 上切换到要提交的分支。

@@ -1123,7 +1123,7 @@ public:
 ```cpp
 std::string Person::getName()
 {
-	reeturn this->name;
+	return this->name;
 }
 ```
 
