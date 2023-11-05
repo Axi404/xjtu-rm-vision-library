@@ -1,6 +1,8 @@
 ---
 tags:
   - 卡尔曼滤波
+  - 拓展卡尔曼滤波
+  - python
 ---
 - 培训时间：/
 - 讲述人：虞若弘
@@ -19,7 +21,7 @@ tags:
 最优化递归数据处理算法（Optimal Recursion Data Processing  Algorithm）。
 ### 计算方法
 
-$$\begin{array}{rl}\hat{\chi}_{k}&=\frac1{k}\left(z_1+z_1+\cdots+z_k\right)\\&=\frac1{kk}\left(z_1+z_2+\cdots+z_{k-1}\right)+\frac1kz_k\\&=\frac1{k}\frac{k-1}{(k-1)}\left(z_1+z_1+z_1+\cdots+z_{k-1}\right)+\frac1kz_k\\&=\frac{k-1}{k}\chi_{k-1}^n+\frac1{k}z_k\\&=\hat{\chi}_{k-1}-\frac1{k}\hat{\chi}_{k-1}+\frac1{k}z_k\end{array}$$
+$$\begin{array}{rl}\hat{x}_{k}&=\frac1{k}\left(z_1+z_1+\cdots+z_k\right)\\&=\frac1{kk}\left(z_1+z_2+\cdots+z_{k-1}\right)+\frac1kz_k\\&=\frac1{k}\frac{k-1}{(k-1)}\left(z_1+z_1+z_1+\cdots+z_{k-1}\right)+\frac1kz_k\\&=\frac{k-1}{k}\chi_{k-1}^n+\frac1{k}z_k\\&=\hat{\chi}_{k-1}-\frac1{k}\hat{\chi}_{k-1}+\frac1{k}z_k\end{array}$$
 其中 $Z_i,\quad i =1, 2, 3, ……, k$  表示第 i 次的状态测量结果且 $\overrightarrow{Z_{i}}=(\vec{p},\vec{\nu})$。$\vec{p}$ 为位置向量，$\vec{v}$ 为速度向量。
 ##### Tips：
 随着测量结果 k 的增加，测量结果不再重要。相反，k很小的时候，$\frac{1}{k}$ 较大，$Z_k$ 影响较大。
@@ -34,14 +36,14 @@ $$\text{当前的估计值 = 上一次的估计值 + 系教 ×(当前测量值 -
 2. 测量误差： 当前测量值与当前估计值之差，用符号 $e_{MEA}$ 表示。
 3. 卡尔曼增益（Kalmen Gain），即上式中的系数，用符号 $k_k$ 表示。
 ### 核心公式
-$$k_k=\frac{e_{\mathrm{ssT}_{k-1}}}{e_{\mathrm{BT}_{k-1}}+e_{\mathrm{M64}_k}}$$
+$$k_k=\frac{e_{{ssT}_{k-1}}}{e_{{BT}_{k-1}}+e_{{M64}_k}}$$
 #### Tips:
 在 k 时刻，
-	1. 若 $e_{EST_{k-1}}\gg e_{MBA_{k}}$，$k_k$ 则会趋近于1。可得 $\hat{\chi}_{k}=\hat{\chi}_{k-1}+z_{k}-\hat{\chi}_{k-1}=z_{k}$ 克服了平均响应慢的问题。即，测量误差很小时，估计值等于测量值。
-	2. 若 $e_{EST_{k-1}}\ll e_{MEA_k}$ ，$k_k$ 则会趋近于0。可得$\hat{\chi_{k}}=\hat{\chi}_{k-1}$ 。即，测量误差很大时，选择相信上一次的估计值。
+	1. 若 $e_{EST_{k-1}}\gg e_{MBA_{k}}$，$k_k$ 则会趋近于1。可得 $\hat{x}_{k}=\hat{x}_{k-1}+z_{k}-\hat{x}_{k-1}=z_{k}$ 克服了平均响应慢的问题。即，测量误差很小时，估计值等于测量值。
+	2. 若 $e_{EST_{k-1}}\ll e_{MEA_k}$ ，$k_k$ 则会趋近于0。可得 $\hat{x_{k}}=\hat{x}_{k-1}$ 。即，测量误差很大时，选择相信上一次的估计值。
 
 ### 举例
-$\text{x=50mm}\quad\hat{\chi}_{0}=40mm\quad e_{tST_{0}}=5mm\quad z_{1}=51mm\quad e_{MEA_{k}}=3mm$
+$\text{x=50mm}\quad\hat{x}_{0}=40mm\quad e_{tST_{0}}=5mm\quad z_{1}=51mm\quad e_{MEA_{k}}=3mm$
 
 |    k     |   $Z_k$  |  $e_{{MEA}_{k}}$  |  $\hat{x_k}$   |   $k_k$   |  $e_{EST_k}$  |
 |    :-:   |    :-:  |   :-:      |    :-:      |      :-:       |        :-:  |
@@ -53,7 +55,7 @@ $\text{x=50mm}\quad\hat{\chi}_{0}=40mm\quad e_{tST_{0}}=5mm\quad z_{1}=51mm\quad
 **当 k = 1 时：**
 $$k_{k}=\frac{5}{5+3}=0.625$$
 $$x_{k}=40+0.625 * (51-40)=46.875$$
-$$e_{\mathrm{EST}}=(1-0.625) * 5=1.875$$
+$$e_{{EST}}=(1-0.625) * 5=1.875$$
 **当 k = 2 时：**
 $$k_{k}=\frac{1.875}{1.875 + 3}=0.3846$$
 $$\hat{x}_{k}=46.875+0.3846 * (48-46.875)=47.308$$
@@ -94,7 +96,7 @@ $$\begin{bmatrix}\dot{x_1}\\\dot{x_2}\end{bmatrix}=\begin{bmatrix}0&1\\0&-\frac 
 可简记为下式：
 $$\dot{x}=Ax+bu$$
 状态空间方程表示为：
-$$\begin{array}{rcl}{{\chi_{k}=}}&{{AX_{k-1}+B u_{k-1}+W_{k-1}}}\\{{Z_{k}=}}&{{HX_{k}+V_{k}}}\\\end{array}$$
+$$\begin{array}{rcl}{{x_{k}=}}&{{AX_{k-1}+B u_{k-1}+W_{k-1}}}\\{{Z_{k}=}}&{{HX_{k}+V_{k}}}\\\end{array}$$
 其中 $X_k$ 为状态变量，A 为状态矩阵， B 为控制矩阵，$u_k$ 为控制，$W_{k-1}$ 为过程噪声，$V_K$ 为测量噪声
 
 # 三、卡尔曼增益数学推导
@@ -112,7 +114,7 @@ e_k=
 &=(I-K_kC)(x_k-\hat{x}_k^{cal})-K_kv_k
 \end{aligned}$$
 进一步地，我们假设这个误差也是**正态分布**：
-$$e_k\sim\mathcal{N}(0,P_k),P_k=E[e_ke_k^T]$$
+$$e_k\sim{N}(0,P_k),P_k=E[e_ke_k^T]$$
 那么就是希望误差满足的这个正态分布的方差越小越好，即转化成了误差的协方差**矩阵的迹**最小，因此需要推导协方差矩阵表达式。
 $$ P_k = E[e_ke_k^T]$$
 代入 $e_k$ 得：
@@ -126,6 +128,7 @@ $$\begin{aligned}E[(I-K_kC)\hat{e}_kv_k^TK_k^T]&=(I-K_kC)E[\hat{e}_kv_k^T]K_k^T=
 $$E[K_kv_k\hat{e}_k^T(1-K_kC)^T]=0$$
 代回原式可得：
 $$P_k=(I-K_kC)E[\hat{e}_k\hat{e}_k^T](I-K_kC)^T+K_kE[v_kv_k^T]K_k^T$$
+
 将误差的协方差矩阵记作 $\hat{P}_{k}=E[\hat{e}_{k}\hat{e}_{k}^{T}]$ 。
 
 由此，推导出协方差矩阵的表达式：
@@ -139,6 +142,7 @@ $$\begin{aligned}
 &-\hat{P}_kC^T+K_k(C\hat{P}_kC^T+R)=0 \\
 &K_{k}=\frac{\hat{P}_{k}C^{T}}{C\hat{P}_{k}C^{T}+R}
 \end{aligned}$$
+
 由此，推导出卡尔曼增益的公式，撒花！
 # 四、误差协方差矩阵数学推导
 
