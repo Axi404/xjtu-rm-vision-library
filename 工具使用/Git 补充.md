@@ -1,7 +1,7 @@
 
 # 常见问题
 
-1. fatal: unable to access 'https://github.com/Multiple-x/xjtu-rm-vision-library.git/': Recv failure: Connection was reset
+1. fatal: unable to access 'https://github.com/xxx/xjtu-rm-vision-library.git/ ': Recv failure: Connection was reset
 
 问题描述： 这是由于网络连接问题，也可能是端口不对，可以通过在git中手动配置的方法
 解决方案： 

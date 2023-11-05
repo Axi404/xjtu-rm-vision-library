@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e013e43e23f54209",
+        "id": "dd00f6c437c394a9",
         "type": "tabs",
         "children": [
           {
-            "id": "4daa2e3a80e90275",
+            "id": "4787378cda585d69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机视觉/卡尔曼滤波器（Kalmen Filter）.md",
-                "mode": "source",
+                "file": "工具使用/Git 补充.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机视觉/卡尔曼滤波器（Kalmen Filter）.md",
+                "file": "工具使用/Git 补充.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "计算机视觉/卡尔曼滤波器（Kalmen Filter）.md",
+                "file": "工具使用/Git 补充.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机视觉/卡尔曼滤波器（Kalmen Filter）.md"
+                "file": "工具使用/Git 补充.md"
               }
             }
           },
@@ -157,8 +157,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "4daa2e3a80e90275",
+  "active": "4787378cda585d69",
   "lastOpenFiles": [
+    "工具使用/Git教程.md",
+    "Home.md",
     "计算机视觉/量化模型.md",
     "计算机视觉/卡尔曼滤波器（Kalmen Filter）.md",
     "相关信息/贡献者须知.md",
@@ -166,9 +168,7 @@
     "环境与配置/Ubuntu安装教程.md",
     "工具使用/配置舒适的Windows系统.md",
     "工具使用/Git 补充.md",
-    "工具使用/Git教程.md",
     "文档编写/LaTeX/LaTeX教程.md",
-    "Home.md",
     "相关信息/关于本知识库.md",
     "images/Linux安装教程/选择Ubuntu安装.jpg",
     "images/Linux安装教程/输入压缩量.png",
